@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+.color-green{
+    color: yellowgreen;
+}
+body{
+    font-family: sans-serif;
+}
+/* Header and menu */
+.header{
+    background: url('_img/banner-header.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+}
+.nav-bar{
+    align-items: center;
+    background: rgba(0,0,0, .4);
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 25px;
+    position: fixed;
+    width: 100vw;   
+}
+.logo-header{
+    width: 70px;
+}
+.logo-header a{
+    color: #fff;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 45%;
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+li a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+li a:hover{
+    color: yellowgreen;
+}
+
+/* Header and text-banner */
+.text-banner{
+    align-items: center;
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    width: 100%;
+}
+.text-banner h1 {
+    width: 100%;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-shadow: 5px 5px 9px #000;
+    text-transform: uppercase;
+    
+}
