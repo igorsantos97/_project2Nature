@@ -57,7 +57,7 @@ li a{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: .5s;
 }
 li a:hover{
     color: yellowgreen;
@@ -78,6 +78,49 @@ li a:hover{
     letter-spacing: -1px;
     text-align: center;
     text-shadow: 5px 5px 9px #000;
+    text-transform: uppercase;   
+}
+/****** Send-email */
+.subscribe{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
+.subscribe-form{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    width: 45%;
+}
+.subscribe-form input[type="text"]{
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+    border-color: #313131;
+    font-size: 18px;
+    width: 50%;
+}
+.subscribe-form input[type="text"]::placeholder{
+    color: #575757;
+    font-size: 14px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    
+}
+.subscribe-form button{
+    background: #313131;
+    border-color: #313131;
+    border-style: solid;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 40%;
+    transition: .5s;
+}
+.subscribe-form button:hover{
+    background: #fff;
+    color: #313131;
 }
