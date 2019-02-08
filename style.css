@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 .color-green{
-    color: yellowgreen;
+   color: yellowgreen;
 }
 body{
     font-family: sans-serif;
@@ -42,24 +42,24 @@ body{
     color: #fff;
     font-size: 25px;
 }
-ul{
+.nav-bar ul{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
     width: 45%;
 }
-li{
+.nav-bar li{
     display: inline-block;
     list-style: none;
 }
-li a{
+.nav-bar li a{
     font-size: 14px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
 }
-li a:hover{
+.nav-bar li a:hover{
     color: yellowgreen;
 }
 
@@ -72,15 +72,30 @@ li a:hover{
     width: 100%;
 }
 .text-banner h1 {
-    width: 100%;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: -1px;
     text-align: center;
     text-shadow: 5px 5px 9px #000;
     text-transform: uppercase;   
+    width: 80%;
 }
-/****** Send-email */
+.text-banner h1:hover{
+    animation-name: animarbotao;
+    animation-duration: .8s;
+    animation-iteration-count: infinite; /*qnts vezes animação repete*/
+    animation-fill-mode: both; /*estado que animação para*/
+    animation-direction: alternate; /*como reproduz a animação*/
+}
+@keyframes animarbotao{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+/****** Subscribe */
 .subscribe{
     background: #fff;
     display: flex;
@@ -123,4 +138,262 @@ li a:hover{
 .subscribe-form button:hover{
     background: #fff;
     color: #313131;
+}
+
+/****** Subscribe */
+.about-us{
+    background: url('_img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 90vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-images{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+}
+.about-images img{
+    display: block;
+    padding-left: 80px;
+    width: 70%;
+}
+.about-text{
+    background-color: rgba(0,0,0,.3);
+    padding: 190px 0px 0 90px;
+    text-align: justify;   
+    width: 50%;
+}
+.about-text h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+.about-text .divider-line{
+    border: solid 1.5px #fff;
+    margin-top: 10px;
+    width: 65px;
+}
+.about-text p{
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 80%;
+}
+.about-text a{
+    background: transparent;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.about-text a:hover{
+    background: #fff;
+    color: #313131;
+}
+
+/* depositions */
+.depositions{
+    background: #313131;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 110px 10% 90px;
+}
+/* *********ARRUMAR
+.depositions .divider-line{
+    background: #000;
+    border: solid 5px #fff;
+    border-width: 5px;
+} */
+
+.depositions p{
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: .3px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+.depositions small{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+
+/* Our-team */
+.our-team{
+    padding: 80px 0%;
+}
+.our-team h2{
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.container-images{
+    display: flex;
+    justify-content: space-between;
+}
+.img-team{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 9%;
+    text-align: center;
+    width: 33,3%;
+}
+.our-team img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.our-team h3{
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.our-team h4{
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+/* portifolio */
+.portifolio{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: red;
+    flex-wrap: wrap
+}
+.imagem-portifolio{
+    background: url('_img/img5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    width: 25%;
+}
+.portifolio-efect{
+    align-items: center; 
+    color: transparent;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    transition: .5s;
+    width: 100%;
+}
+.portifolio-efect:hover{
+    color: #fff;
+    background: rgba(0,0,0, .4);
+    cursor: pointer;
+}
+
+/* CLICK HERE */
+.click-here{
+    width: 100%;
+    border-bottom: 4px solid #313131;
+}
+.click-here p{
+    text-align: end;
+    padding: 30px 2%;
+}
+.click-here p a{
+    color: #313131;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+form.contact{
+    align-items: center;
+    height: 75vh;
+    padding: 50px 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+form.contact input{
+    padding: 15px 5px;
+    border: solid #313131 1px;
+    color: #313131;
+    border-width: 0 0 1px 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+form.contact input::placeholder{
+    font-size: 15px;
+}
+form.contact textarea{
+    padding: 10px 5px;
+    border: solid #313131 1px;
+    color: #313131;
+    border-width: 0 0 1px 0;
+    margin-bottom: 55px;
+    width: 100%;
+}
+form.contact textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+form.contact button{
+    color: #fff;
+    background: #313131;
+    border-color: #313131;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+form.contact button:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #313131;
+}
+
+/* footer */
+footer{
+    align-items: center;
+    background: #313131;
+    height: 180px;
+    width: 100%;
+    padding: 30px 2% 10px;
+    display: flex;
+    justify-content: space-between;
+}
+footer li{
+    list-style: none;
+    color: #fff;
+    line-height: 22px;
 }
